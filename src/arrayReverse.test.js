@@ -7,12 +7,10 @@ describe(`Function 'arrayReverse':`, () => {
     expect(arrayReverse).toBeInstanceOf(Function);
   });
 
-  it(`should return an array`, () => {
+  it(`should correctly reverse an array of two strings'`, () => {
     const result = arrayReverse(["Abra", "Cadabra"]);
     expect(result).toEqual(["arba", "daCarbA"]);
-    expect(result).toContain("arba", "daCarbA");
-    expect(result[0]).toMatch(/arba/);
-    expect(result[1]).toMatch("daCarbA");
+
     expect(result).toBeInstanceOf(Array);
     expect(arrayReverse(result)).toEqual(["Abra", "Cadabra"]);
   });
